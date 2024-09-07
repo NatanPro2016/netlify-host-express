@@ -1,0 +1,20 @@
+{
+  "name": "netlify-host",
+  "module": "api.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build":"netlify deploy --prod"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "netlify-cli": "^17.35.0",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
+  }
+}
